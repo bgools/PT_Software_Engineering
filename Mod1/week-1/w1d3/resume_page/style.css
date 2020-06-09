@@ -10,6 +10,11 @@ h1 {
     text-align: center;
     color: limegreen;
 }
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: limegreen;
+}
 h3 {
     color: yellow;
 }
@@ -18,4 +23,9 @@ h3 {
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
