@@ -16,7 +16,7 @@ for (i=0; i<=200; i+=2){
 //////////////////////
 
 //FizzBuzz///
-*/
+
 ////Wild Wild Life////
 
 const wolfy = ["Wolfy", "wolf", 16, "Yukon Territory"]
@@ -35,15 +35,14 @@ console.log(plantee);
 console.log(porgee);
 console.log(dart);
 
-/*
+*/
 //Yell at the Ninja Turtles///
 const turles = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"];
 for (name of turles){
     let yellAtTurtles = name.toUpperCase();
     console.log(yellAtTurtles);
 }
-*/
-
+/*
 //Methods, Revisited///
 
 const favMovies = ['Jaws', 'The Fellowship of the Ring', 'Howl\'s Moving Castle', 'Django Unchained', 'Cloud Atlas', 'The Usual Suspects', 
@@ -51,3 +50,4 @@ const favMovies = ['Jaws', 'The Fellowship of the Ring', 'Howl\'s Moving Castle'
 'Harry Potter', 'Imitation of Life', 'Snatch', 'Fast and Furious'];
 
 console.log(favMovies[8]);
+*/
