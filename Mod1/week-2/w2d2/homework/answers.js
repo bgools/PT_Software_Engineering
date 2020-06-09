@@ -6,3 +6,10 @@ for (i=1; i<=20; i++){
 //Easy Going////////
 ////////////////////
 
+//Even numbers Loop 0-200
+for (i=0; i<=200; i+=2){
+    console.log(i);
+}
+//////////////////////
+//Get Even Answered///
+//////////////////////
