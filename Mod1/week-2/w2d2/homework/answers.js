@@ -1,23 +1,27 @@
 /*
-//Loop numbers 1 - 20
-for (i=1; i<=20; i++){
-    console.log(i);
-}
+
 ////////////////////
 //Easy Going////////
 ////////////////////
 
-//Even numbers Loop 0-200
-for (i=0; i<=200; i+=2){
+for (i=1; i<=20; i++){
     console.log(i);
 }
+
+
 //////////////////////
 //Get Even Answered///
 //////////////////////
 
+for (i=0; i<=200; i+=2){
+    console.log(i);
+}
+
+
 //////////////////////
-//FizzBuzz///
+//FizzBuzz////////////
 //////////////////////
+
 for (let i = 1; i <= 100; i++) {
     if (i % 3 === 0 && i % 5 === 0){
         console.log("FizzBuzz")
@@ -29,7 +33,9 @@ for (let i = 1; i <= 100; i++) {
     console.log(i)
 }
 
+//////////////////////
 ////Wild Wild Life////
+//////////////////////
 
 const wolfy = ["Wolfy", "wolf", 16, "Yukon Territory"]
 const sharky = ["Sharky", "shark", 20, "Left Coast"]
@@ -47,9 +53,14 @@ console.log(plantee);
 console.log(porgee);
 console.log(dart);
 
-
+//////////////////////////////
 //Yell at the Ninja Turtles///
+//////////////////////////////
+
+// 1.
 const turles = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"];
+
+// 2.
 for (name of turles){
     let yellAtTurtles = name.toUpperCase();
     console.log(yellAtTurtles);
@@ -128,7 +139,7 @@ whereIsWaldo[1].splice(2, 1, "No One");
 
 console.log(whereIsWaldo);
 
-*/
+
 
 ////////////////////////
 //Excited Kitten////////
@@ -148,3 +159,14 @@ for (i = 1; i <= 20; i ++){
         console.log("Love me, pet me! HSSSSSS!")
     }
 }
+
+*/
+
+/////////////////////////
+//Find The Median////////
+/////////////////////////
+
+const nums = [14,11,16,15,13,16,15,17,19,11,12,14,19,11,15,17,11,18,12,17,12,71,18,15,12];
+console.log(nums[Math.floor((nums.length - 1) / 2)]);
+//console.log(nums.length);
+
