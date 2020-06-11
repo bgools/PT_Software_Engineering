@@ -110,7 +110,7 @@ console.log(value);
 
 // 10.
 console.log(favMovies);
-*/
+
 
 ///////////////////////
 //Where is Waldo///////
@@ -133,3 +133,18 @@ console.log(whereIsWaldo);
 ////////////////////////
 //Excited Kitten////////
 ////////////////////////
+
+// 1.
+const kittyTalk = ["...human...why you taking pictures of me?...", "...the catnip made me do it...", "...why does the red dot always get away..."];
+//for (i = 1; i <= 20; i ++){
+   // console.log("Love me, pet me! HSSSSSS!");
+//}
+
+// 2.
+for (i = 1; i <= 20; i ++){
+    if (i % 2 === 0){
+        console.log(kittyTalk[Math.floor(Math.random() * kittyTalk.length)]);
+    } else if (i % 2 !== 0){
+        console.log("Love me, pet me! HSSSSSS!")
+    }
+}
