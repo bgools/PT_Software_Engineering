@@ -111,3 +111,25 @@ console.log(value);
 // 10.
 console.log(favMovies);
 */
+
+///////////////////////
+//Where is Waldo///////
+///////////////////////
+
+const whereIsWaldo = [["Timmy", "Frank"], "Eggbert",
+                    ["Lucinda", "Jacc", "Neff", "Snoop"],
+                    ["Petunia", ["Baked Goods", "Waldo"]]];
+
+whereIsWaldo.splice(whereIsWaldo.indexOf("Eggbert"), 1);
+
+console.log(whereIsWaldo);
+
+whereIsWaldo[1].splice(2, 1, "No One");
+
+console.log(whereIsWaldo);
+
+*/
+
+////////////////////////
+//Excited Kitten////////
+////////////////////////
