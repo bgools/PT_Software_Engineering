@@ -33,7 +33,7 @@ const studentNames_Locations = [
     {name: 'Beth', location: 'Columbus, OH'},
     {name: 'Thomas', location: 'Columbus, OH'}
 ]
-*/
+
 // 6.
 //datatype: Array of Object with Array
 //data structure ezample:
@@ -44,3 +44,27 @@ const studentNames_Locations = [
     {name: 'Thomas', location: 'Columbus, OH', favTvShows: ['Betas', 'Silicon Valley', 'Care Bears']},
 ]
 console.log(studentNames_Locations);
+*/
+
+//////////////////////////
+///Take It Easy///////////
+//////////////////////////
+
+// 1.
+const colorsOfTheRainbow = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet']
+
+// 2.
+console.log(colorsOfTheRainbow[4]);
+
+// 3.
+const bryan = {
+    favFood: 'Pizza',
+    hobby: 'Music',
+    currentCity: 'Columbus, OH',
+    favDataType: 'Objects'
+}
+
+// 4.
+console.log(bryan.hobby);
+
+
