@@ -18,6 +18,53 @@ console.log(crayonBox.listOfCrayons[4]);
 //cap can have properties like material: 'metal' or 'plastic', 
 //color: blue or white etc. Log one of the properties of that inner object.
 
+const bottle = {
+    cap: {
+        material: 'plastic',
+        color: 'blue'
+    }
+}
+
+console.log(bottle.cap.material);
+
+// 3. Create an array called receipt that has at least one object in it. 
+//The inner objects should be items that have a name and a price. 
+//Log one of the properties of that inner object.
+
+const receipt = [
+    {
+        name: 'Doritoes',
+        price: 2
+    },
+    {
+        name: 'Snapple',
+        price: 1.19
+    }
+]
+
+console.log(receipt[1]);
+
+
+// 4. Create an array called apartmentBuilding that has an array as one of its elements, 
+//the inner array should be the names of the tenants. 
+//Log one of the elements of the inner array.
+
+const apartmentBuilding = [
+    {
+        unitNumber: 1,
+        tenants: ['bryan', 'steph', 'tre']
+    }
+]   
+
+console.log(apartmentBuilding[0].tenants[2]);
+
+
+
+
+
+
+
+
 
 ///////////////////////////////////////////////////////////////////
 //Combine objects, arrays, and functions more than one level deep//
