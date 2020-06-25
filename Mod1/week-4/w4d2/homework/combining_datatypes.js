@@ -147,6 +147,67 @@ console.log(vendingMachine.vend(2));
 console.log(vendingMachine.vend(3));
 
 
+///////////////
+///Callbacks///
+///////////////
+
+function add(num1,num2) {
+    return num1 + num2
+}
+
+function subtract(num1,num2){
+    return num1 - num2
+}
+
+function multiply(num1,num2){
+    return num1 * num2
+}
+
+function divide(num1,num2){
+    return num1 / num2
+}
+/*
+function calculate(operates,num1,num2){
+    operates(num1, num2);
+    return add(num1,num2)
+    //operates = add(num1,num2)
+}
+
+calculate(add,3,2);
+console.log(calculate);
+*/
+function calculate(num1,num2, operates) {
+    return operates(num1,num2);
+}
+console.log(calculate(3,2,add));
+console.log(calculate(3,2,subtract));
+console.log(calculate(3,2,multiply));
+console.log(calculate(3,2,divide));
+
+
+///////////////////////////////////
+///Function definition Placement///
+///////////////////////////////////
+
+/*
+const bar = () => {
+    console.log('bar here');
+}
+bar();
+
+
+const foo = () => {
+    console.log('foo here');
+}
+foo();
+*/
+
+
+const foo = ()=>{ //orginal code missing the intializer so i added the '=' sign
+    console.log('hi');
+}
+foo();
+
 
 
 
