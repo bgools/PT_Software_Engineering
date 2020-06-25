@@ -100,3 +100,53 @@ const powerButton = () => {
     options()
 }
 powerButton()
+
+
+////////////////////////////////
+//Model a Vending Machine///////
+////////////////////////////////
+
+const vendingMachine = {
+    snacks: [
+        {
+            name: 'Doritoes',
+            price: 2
+        },
+        {
+            name: 'Snapple',
+            price: 1.19
+        },
+        {
+            name: 'Brownie',
+            price: .75
+        }
+
+    ],
+
+    vend: function vend(userInput){
+        switch(userInput) {
+            case 0:
+                return vendingMachine.snacks[0].name;
+                break;
+            case 1:
+                return vendingMachine.snacks[1].name;
+                break;
+            case 2:
+                return vendingMachine.snacks[2].name;
+                break;
+            default:
+                return 'Invalid item please select a different option.'
+        }
+    }
+    
+}
+
+console.log(vendingMachine.vend(0));
+console.log(vendingMachine.vend(1));
+console.log(vendingMachine.vend(2));
+console.log(vendingMachine.vend(3));
+
+
+
+
+
