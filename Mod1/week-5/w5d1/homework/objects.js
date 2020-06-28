@@ -8,9 +8,9 @@
 
 class Hamster {
     constructor(owner, name, price){
-        this.owner = ''
+        this.owner = owner
         this.name = name
-        this.price = 15
+        this.price = price
     }
     wheelRun(){
         console.log('squeak squeak');
@@ -23,19 +23,19 @@ class Hamster {
         return price
     }
 }
-//const bill = new Hamster('Bryan', 'Bill', 20)
-//console.log(bill);
+const bill = new Hamster('Bryan', 'Bill', 20)
+//console.log(bill.name);
 
 //Person//
 
 class Person {
     constructor(name, age, height, weight, mood, hamsters, bankAccount){
         this.name = name
-        this.age = age
-        this.height = height
-        this.weight = weight
-        this.mood = mood
-        this.hamsters = hamsters
+        this.age = 0
+        this.height = 0
+        this.weight = 0
+        this.mood = 0
+        this.hamsters = []
         this.bankAccount = bankAccount
     }
     getName(){
@@ -74,15 +74,30 @@ class Person {
         let mood = --this.mood
         console.log(mood);
         let bankAccount = (this.bankAccount + 10)
-        console.log(bankAccount);
-        
+        console.log(bankAccount);        
     }
-    //buyHamster(hamster)
+    buyHamster(hamster){
+        this.hamsters.push(hamster)
+        this.mood += 10;
+        this.bankAccount = this.bankAccount - hamster.price //unable to figure out using getPrice()        
+    }
 
 }
 const bryan = new Person('Bryan', 34, 72, 10, 10, ['bill', 'jack', 'jill'], 300)
-console.log(bryan.getName());
-console.log(bryan.getAge());
-console.log(bryan.getWeight());
+bryan.buyHamster(bill)
+console.log(bryan);
 
 
+
+//console.log(bryan.getName());
+//console.log(bryan.getAge());
+//console.log(bryan.getWeight());
+//console.log(bryan.eat());
+//console.log(bryan.buyHamster());
+
+
+//////////////////////////////////
+///Story with Person class////////
+//////////////////////////////////
+
+const timmy = new Person('Timmy', 5, )
