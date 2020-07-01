@@ -100,4 +100,121 @@ console.log(bryan);
 ///Story with Person class////////
 //////////////////////////////////
 
-const timmy = new Person('Timmy', 5, )
+
+//1. Instantiate a new Person named Timmy
+const Timmy = new Person ('Timmy',);
+console.log(Timmy);
+//2. Age Timmy five years
+for(let i = 1; i <= 5; i++) {
+    Timmy.ageUp();
+}
+console.log(Timmy);
+//3. At this point Timmy's a little bummed. As a precocious child, he feels he's "seen it all" already. Have him eat five times.
+for(let i = 1; i <= 5; i++) {
+    Timmy.eat();
+}
+console.log(Timmy);
+//4. Now Timmy's a little heavier than he wants to be. Kindergarten's coming up and he wants to look good. Have him exercise five times.
+for(let i = 1; i <= 5; i++) {
+    Timmy.exercise();
+}
+console.log(Timmy);
+//5. Age Timmy 9 years
+for(let i = 1; i <= 9; i++) {
+    Timmy.ageUp();
+}
+console.log(Timmy);
+//6. Create a hamster named "Gus" & 7. Set Gus's owner to the string "Timmy"
+const Gus = new Hamster('Timmy','Gus');
+console.log(Gus);
+//8. Have Timmy "buy" Gus
+Timmy.buyHamster(Gus);
+console.log(Timmy);
+//I can't get the cost of the hamster to subtract from the bank balance the value keeps coming up as undefined
+//9. Age Timmy 15 years
+for(let i = 1; i <= 15; i++) {
+    Timmy.ageUp();
+}
+//10. Have Timmy eat twice
+for(let i = 1; i <= 2; i++) {
+    Timmy.eat();
+}
+
+
+//////////////
+///Our Hero///
+//////////////
+
+class Hero {
+    constructor(name) {
+        this.name = name;
+        this.health = 100;
+        this.weapons = {sprinkleSpray: 5, sugarShock: 10};
+        this.catchPhrase = ['I\'m fresher than day old pizza', 'You can\'t count my calories'];
+    }
+    talkSass() {
+        let phrases = this.catchPhrase;
+        let random = Math.random();
+        let totalPhrase = this.catchPhrase.length;
+        let randomIndex = Math.floor(random * totalPhrase);
+        let randomPhrase = phrases[randomIndex];
+        return randomPhrase;
+    }
+    announceHealth() {
+        return `${this.name}'s health is ${this.health}.`;
+    }
+        fight(enemy) {
+            //console.log('i\'m ready to rumble');
+            let random = Math.round(Math.random());
+            if (random == 1) {
+                enemy.health -= this.weapons.sugarShock;
+                return (`${this.name} has used sugar shock`)
+            } else {
+                enemy.health -= this.weapons.sprinkleSpray;
+                return (`${this.name} has used sprinkle spray`)
+            }
+        }
+}
+const Dougie = new Hero('Dougie');
+//Our Enemy
+class Enemy {
+    constructor(name) {
+        this.name = name;
+        this.health = 100;
+        this.weapons = {pepperoniStars: 5, cheeseGrease: 10};
+        this.catchPhrase = ['I\'m youtube famous', 'I\'m more dangerous than an uncovered sewer'];
+    }
+    talkSmack() {
+        let phrases = this.catchPhrase;
+        let random = Math.random();
+        let totalPhrase = this.catchPhrase.length;
+        let randomIndex = Math.floor(random * totalPhrase);
+        let randomPhrase = phrases[randomIndex];
+        return randomPhrase;
+    }
+    announceHealth() {
+        return `${this.name}'s health is ${this.health}.`;
+    }
+    fight(hero) {
+        //return 'I\'m gonna flatten you like a slice of pepperoni'
+            let random = Math.round(Math.random());
+            if (random == 1) {
+                hero.health -= this.weapons.pepperoniStars;
+                return (`${this.name} has used pepperoni stars`)
+            } else {
+                hero.health -= this.weapons.cheeseGrease;
+                return (`${this.name} has used cheese grease`)
+            }
+        }
+}
+const PizzaRat = new Enemy('Pizza Rat');
+//Walking Down the Street
+console.log(Dougie.talkSass());
+console.log(PizzaRat.talkSmack());
+console.log(Dougie.announceHealth());
+console.log(PizzaRat.announceHealth());
+//Fight!
+console.log(Dougie.fight(PizzaRat));
+console.log(PizzaRat.fight(Dougie));
+console.log(PizzaRat.announceHealth());
+console.log(Dougie.announceHealth());
