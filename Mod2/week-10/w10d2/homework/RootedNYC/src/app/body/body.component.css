@@ -1,0 +1,46 @@
+.bg-1 {
+    background-image: url(https://cdn.shopify.com/s/files/1/2781/9558/files/DSC02397_1_1400x.png?v=1587704398);
+    background-color: #1abc9c; /* Green */
+    color: #ffffff;
+    padding-top: 100px;
+    padding-bottom: 750px;
+  }
+  .bg-2 {
+    background-color: #ffffff; /* Dark Blue */
+    color: #000000;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .bg-3 {
+    background-color: #ffffff; /* White */
+    color: #555555;
+  }
+
+  .button {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+.pg {
+    text-align: center;
+    
+}
+.dot {
+    height: 100px;
+    width: 100px;
+    background-color: greenyellow;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+  
+/*
+  .container-fluid {
+    padding-top: 100px;
+    padding-bottom: 750px;
+  }
+  */
