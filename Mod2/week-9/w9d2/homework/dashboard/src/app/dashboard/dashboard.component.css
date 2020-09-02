@@ -1,0 +1,10 @@
+
+    .dash{
+        height: 100%;
+        width: 150px;
+        
+        top: 20;
+        left: 0;
+        background-color: lightgrey;
+        padding-top: 1px;
+        }
