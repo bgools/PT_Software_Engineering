@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  .flex-container > div{
+  
+  
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 100px;
+    
+    text-align: center;
+    display: inline-block;
+     margin: 1%;;
+  
+    background-color: lightgrey;
+  
+  
+   
+  
+      font-size: larger;
+      text-align: center;
+      list-style-type: none;
+  
+  
+  }
+  #website-visitors{
+    display: inline-block;
+    position: relative;
+    margin-left: 12px;
+    padding: 0px 180px;
+    float: right;
+    width: 75%;
+    height: 350px;
+    background-color: lightgrey;
+  }
