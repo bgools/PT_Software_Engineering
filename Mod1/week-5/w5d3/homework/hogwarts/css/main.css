@@ -1,1 +1,55 @@
-body {background-color: #F8F7FF}/*or any color of your choosing*/
+body
+
+    {background-color : gainsboro;
+        text-align: center;
+     font-family: fantasy;
+    
+    }
+
+    #para {
+
+     background-color: aqua;
+
+
+
+    }
+
+
+
+#container {
+
+
+ font-size: medium;
+ background-color: pink;
+}
+
+
+
+#Dog{
+
+    font-family: fantasy;
+
+
+}
+
+
+
+#uList{
+
+opacity: 0.5;
+
+
+
+}
+#table
+{
+
+
+border: gray solid ;
+
+    margin-left: auto;
+    margin-right: auto;
+
+
+
+}
