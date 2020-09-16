@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <title>To Do App</title>
+    <!--     CSS stylesheet -->
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./style2.css" />
+   
+    <!--     remember, jQuery must come first -->
+  
+ 
+    <!--     now your code -->
+   
+  </head>
+   <body>
+
+<header>
+
+    <h1>B-Ry's Todo list</h1>
+</header>
+<form>
+  <input type ="text" class = "todo-input"/>
+  <button class = "todo-button" type="submit">
+  <i class= "fas fa-plus-square"></i>
+  </button>
+<div class ="select">
+    <select name ="todos" class ="filter-todo">
+    <option value="all">All</option>
+    <option value="completed">Completed</option>
+    <option value="uncompleted">Uncompleted</option>
+    </select>
+</div>
+</form>
+
+<div class="todo-container">
+
+ <ul class="todo-list"></ul>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+<script
+src="https://code.jquery.com/jquery-3.5.1.js"
+integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+crossorigin="anonymous"></script>
+<script src="./todolist2.js" charset="utf-8"></script>
+
+</body>
+</html>
